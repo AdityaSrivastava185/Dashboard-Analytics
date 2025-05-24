@@ -1,24 +1,48 @@
-# 🍕 Next.js Dashboard with Google Authentication
+# 🍕 Next.js Dashboard with Clerk Authentication
 
-This project is a modern, server-rendered dashboard web application built using **Next.js**. It features **Google OAuth authentication**, protected routes, and a clean **Tailwind CSS**-styled UI with mock pizza order management.
+This project is a modern, server-rendered dashboard web application built using **Next.js**. It features **Clerk Authentication**, protected routes, and a clean **Tailwind CSS**-styled UI with mock pizza order management.
 
 ## 🚀 Live Demo
-[Visit the Deployed App](https://your-deployment-link.vercel.app)  
-_(Replace with your actual Vercel or Railway link)_
+[Visit the Deployed App](https://dashboard-analytics-chi.vercel.app/)  
 
 ---
 
 ## 📌 Features
 
-- 🔐 **Google Authentication** using NextAuth.js
+- 🔐 **Clerk Authentication** using NextAuth.js
 - 👋 Personalized greeting: "Hello, [User Name]"
 - 📦 Protected Dashboard Routes
 - 📋 Responsive Pizza Orders Table with Status Badges
 - 🎨 Clean and modern UI with Tailwind CSS
-- ☁️ Deployed on Vercel or Railway
+- ☁️ Deployed on Vercel 
 
 ---
 
+### 3. Set Up Clerk with Google OAuth
+
+    Go to https://clerk.dev and create an account.
+
+    Create a new Clerk application.
+
+    In the OAuth Providers section, enable Google OAuth.
+
+    Copy the following from Clerk:
+
+        Publishable Key
+
+        Secret Key
+
+
+    In the root of your project, create a file named .env.local and add:
+## Environment Variables
+
+- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+- `CLERK_SECRET_KEY`
+- `NEXT_PUBLIC_CLERK_SIGN_IN_URL`
+- `NEXT_PUBLIC_CLERK_SIGN_UP_URL`
+- `NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL`
+
+---
 ## 🧰 Tech Stack
 
 | Category        | Technology            |
@@ -26,7 +50,7 @@ _(Replace with your actual Vercel or Railway link)_
 | Framework      | [Next.js](https://nextjs.org/) |
 | Styling        | [Tailwind CSS](https://tailwindcss.com/) |
 | Authentication | [clerk](https://clerk.com/) with Google OAuth |
-| Deployment     | [Vercel](https://vercel.com/) / [Railway](https://railway.app/) |
+| Deployment     | [Vercel](https://vercel.com/) |
 
 ---
 
@@ -49,7 +73,7 @@ _(Replace with your actual Vercel or Railway link)_
 
 ### 🍕 Pizza Orders Page
 
-- Route: `/orders`
+- Route: `/dashboard`
 - View mock pizza orders in a styled table.
 - **Table Columns**:
   - `Order ID` (e.g., PZA001)
@@ -61,3 +85,21 @@ _(Replace with your actual Vercel or Railway link)_
     `Pending`, `Preparing`, `Out for Delivery`, `Delivered`, `Cancelled`
 
 ---
+## 🛠️ Local Setup Instructions
+
+Follow the steps below to set up and run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AdityaSrivastava185/Dashboard-Analytics.git
+cd Dashboard-Analytics
+```
+```bash 
+npm install
+```
+```bash 
+npm run dev
+```
+
+Note-Beside the Nextjs and Clerk Authentication, you need to set up the environment variables in the .env.local file and i am using shadcn ui and lucide icons for the frontend components and icons
