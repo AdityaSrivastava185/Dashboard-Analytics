@@ -33,7 +33,7 @@ _(Replace with your actual Vercel or Railway link)_
 ## 🧪 Authentication Flow
 
 - **Google OAuth Login**: Secure sign-in with your Google account.
-- **Protected Routes**: Pages like `/dashboard` and `/orders` are accessible only after login.
+- **Protected Routes**: Pages like `/dashboard` and `/` are accessible only after login.
 - **Redirect**: Unauthenticated users are redirected to the `/login` page.
 - **Logout**: Easily logout via the navigation bar.
 
