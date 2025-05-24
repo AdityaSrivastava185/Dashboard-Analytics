@@ -25,7 +25,7 @@ _(Replace with your actual Vercel or Railway link)_
 |----------------|------------------------|
 | Framework      | [Next.js](https://nextjs.org/) |
 | Styling        | [Tailwind CSS](https://tailwindcss.com/) |
-| Authentication | [NextAuth.js](https://next-auth.js.org/) with Google OAuth |
+| Authentication | [clerk](https://clerk.com/) with Google OAuth |
 | Deployment     | [Vercel](https://vercel.com/) / [Railway](https://railway.app/) |
 
 ---
