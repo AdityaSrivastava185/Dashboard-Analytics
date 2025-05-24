@@ -61,6 +61,3 @@ _(Replace with your actual Vercel or Railway link)_
     `Pending`, `Preparing`, `Out for Delivery`, `Delivered`, `Cancelled`
 
 ---
-
-## 🧱 Folder Structure (Sample)
-
