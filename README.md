@@ -2,9 +2,6 @@
 This project is built by `Aditya Srivastava`
 This project is a modern, server-rendered dashboard web application built using **Next.js**. It features **Clerk Authentication**, protected routes, and a clean **Tailwind CSS**-styled UI with mock pizza order management.
 
-## 🚀 Live Demo
-[Visit the Deployed App](https://dashboard-analytics-chi.vercel.app/)  
-
 ---
 
 ## 📌 Features
